@@ -1,6 +1,6 @@
 # 🌦️ Real-Time Weather Data Collector
 
-A Python-based ETL pipeline that fetches real-time weather data from [Open-Meteo](https://open-meteo.com/) (no API key required) for multiple cities, transforms the data using Pandas, and stores it into a PostgreSQL database. You can later perform analysis on historical weather patterns such as average temperatures, wind speeds, etc.
+A Python-based ETL pipeline that fetches real-time weather data from [Open-Meteo](https://open-meteo.com/) (no API key req) for multiple cities, transforms the data using Pandas, and stores it into a PostgreSQL database. You can later perform analysis on historical weather patterns such as average temperatures, wind speeds, etc.
 
 ---
 
@@ -81,7 +81,7 @@ Expected output:
 
 ### 7. View Table in PostgreSQL
 <pre>
-psql -U kavin_postgres -d weatherdb
+psql -U postgres -d weatherdb
 
 -- Then in the psql shell:
 SELECT * FROM weather_data LIMIT 10;
